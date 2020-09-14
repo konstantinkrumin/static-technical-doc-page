@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
+@import 'variables';
+@import 'navbar';
+@import 'body-section';
+@import 'footer';
+@import 'media-queries';
+
+/* MAIN */
+body {
+  font-family: $font-family;
+  display: flex;
+  background-color: $background-color;
+}
+
+a { text-decoration: none; }

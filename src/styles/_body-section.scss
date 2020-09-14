@@ -1,0 +1,22 @@
+@import 'variables';
+
+/* BODY SECTION */
+.main-section { margin: 0px 30px 0px 280px; }
+
+#prerequisites_and_objective,
+.note {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $note-bg-color;
+}
+
+code { background-color: $code-bg-color; }
+
+.code_separate {
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  white-space: pre-line;
+}
+
+.code_intext { padding: 2px 5px 2px 5px; }

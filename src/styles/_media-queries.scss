@@ -1,0 +1,30 @@
+/* MEDIA QUERIES */
+@media (max-width: 1250px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    border-right: none;
+    position: relative;
+    top: 0px;
+    align-items: left;
+    width: 100%;
+  }
+
+  .nav-link {
+    border-bottom: 1px solid black;
+    padding: 5px 5px 5px 10px;
+  }
+
+  #nav_link_1 { border-top: 1px solid black; }
+
+  .main-section { margin: 0px 20px 0px 20px; }
+
+  footer { margin: 0px 20px 0px 20px; }
+
+  img { width: 100%; }
+}

@@ -1,0 +1,22 @@
+/* NAVBAR */
+#navbar {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#page_title { text-align: center; }
+
+.nav-link {
+  color: rgb(100, 100, 100);
+  border-bottom: 1px solid black;
+  padding: 10px 10px 10px 20px;
+}
+
+#nav_link_1 { border-top: 1px solid black; }
