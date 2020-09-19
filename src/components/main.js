@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function Main() {
   return (
@@ -11,10 +11,11 @@ export default function Main() {
           <a
             id="flexbox_def_link"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/2uuecut"
           >
             Flexbox
-          </a>{" "}
+          </a>{' '}
           is a one-dimensional layout method for laying out items in rows or
           columns. Items flex to fill additional space and shrink to fit into
           smaller spaces. This article explains all the fundamentals.
@@ -24,18 +25,20 @@ export default function Main() {
             <b>Prerequisites:</b>
           </p>
           <p>
-            HTML basics (study{" "}
+            HTML basics (study{' '}
             <a
               id="intro_to_html_link"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://mzl.la/3bhiupH"
             >
               Introduction to HTML
             </a>
-            ), and an idea of how CSS works (study{" "}
+            ), and an idea of how CSS works (study{' '}
             <a
               id="intro_to_css_link"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://mzl.la/38bVy9k"
             >
               Introduction to CSS
@@ -56,14 +59,20 @@ export default function Main() {
         </header>
         <p>
           For a long time, the only reliable cross browser-compatible tools
-          available for creating CSS layouts were things like{" "}
-          <a id="floats_link" target="_blank" href="https://mzl.la/2Uyh3ND">
+          available for creating CSS layouts were things like{' '}
+          <a
+            id="floats_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2Uyh3ND"
+          >
             floats
-          </a>{" "}
-          and{" "}
+          </a>{' '}
+          and{' '}
           <a
             id="positioning_link"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/2tF6zAT"
           >
             positioning
@@ -100,33 +109,45 @@ export default function Main() {
         <p>
           In this article we are going to get you to work through a series of
           exercises to help you understand how flexbox works. To get started,
-          you should make a local copy of the first starter file —{" "}
+          you should make a local copy of the first starter file —{' '}
           <a
             id="flexbox0.html_link"
             target="_blank"
+            rel="noopener noreferrer"
             href="http://bit.ly/2OBTKi2"
           >
             flexbox0.html
-          </a>{" "}
+          </a>{' '}
           from our github repo — load it in a modern browser (like Firefox or
-          Chrome), and have a look at the code in your code editor. You can{" "}
+          Chrome), and have a look at the code in your code editor. You can{' '}
           <a
             id="see_it_live_here_link"
             target="_blank"
+            rel="noopener noreferrer"
             href="http://bit.ly/2UB9S7q"
           >
             see it live here
-          </a>{" "}
+          </a>{' '}
           also.
         </p>
         <p>
-          You'll see that we have a{" "}
-          <a id="header" target="_blank" href="https://mzl.la/2H58WQC">
+          You'll see that we have a{' '}
+          <a
+            id="header"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2H58WQC"
+          >
             &lt;header&gt;
-          </a>{" "}
+          </a>{' '}
           element with a top level heading inside it, and a "section" element
-          containing three{" "}
-          <a className="article" target="_blank" href="https://mzl.la/2H6a2LV">
+          containing three{' '}
+          <a
+            className="article"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2H6a2LV"
+          >
             &lt;article&gt;
           </a>
           s. We are going to use these to create a fairly standard three column
@@ -149,14 +170,24 @@ export default function Main() {
           To start with, we need to select which elements are to be laid out as
           flexible boxes. To do this, we set a special value of display on the
           parent element of the elements you want to affect. In this case we
-          want to lay out the{" "}
-          <a className="article" target="_blank" href="https://mzl.la/2H6a2LV">
+          want to lay out the{' '}
+          <a
+            className="article"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2H6a2LV"
+          >
             &lt;article&gt;
-          </a>{" "}
-          elements, so we set this on the{" "}
-          <a className="section" target="_blank" href="https://mzl.la/2ulMDUf">
+          </a>{' '}
+          elements, so we set this on the{' '}
+          <a
+            className="section"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2ulMDUf"
+          >
             &lt;section&gt;
-          </a>{" "}
+          </a>{' '}
           (which becomes a flex container):
         </p>
         <code className="code_separate">
@@ -178,10 +209,15 @@ export default function Main() {
           set up to solve common problems such as this. More on those later.
         </p>
         <p className="note">
-          <b>Note:</b> You can also set a{" "}
-          <a id="display" target="_blank" href="https://mzl.la/2ScicIU">
+          <b>Note:</b> You can also set a{' '}
+          <a
+            id="display"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2ScicIU"
+          >
             display
-          </a>{" "}
+          </a>{' '}
           value of <b>inline-flex</b> if you wish to lay out inline items as
           flexible boxes.
         </p>
@@ -212,27 +248,29 @@ export default function Main() {
             this axis are called the <b>cross start</b> and <b>cross end</b>.
           </li>
           <li>
-            The parent element that has{" "}
-            <code className="code_intext">display: flex</code> set on it (the{" "}
+            The parent element that has{' '}
+            <code className="code_intext">display: flex</code> set on it (the{' '}
             <a
               className="section"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://mzl.la/2ulMDUf"
             >
               &lt;section&gt;
-            </a>{" "}
+            </a>{' '}
             in our example) is called the <b>flex container</b>.
           </li>
           <li>
             The items being laid out as flexible boxes inside the flex container
-            are called <b>flex items</b> (the{" "}
+            are called <b>flex items</b> (the{' '}
             <a
               className="article"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://mzl.la/2H6a2LV"
             >
               &lt;article&gt;
-            </a>{" "}
+            </a>{' '}
             elements in our example).
           </li>
         </ul>
@@ -247,14 +285,15 @@ export default function Main() {
           <h2>Columns or rows?</h2>
         </header>
         <p>
-          Flexbox provides a property called{" "}
+          Flexbox provides a property called{' '}
           <a
             className="flex-direction"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/2vUynlw"
           >
             flex-direction
-          </a>{" "}
+          </a>{' '}
           that specifies what direction the main axis runs in (what direction
           the flexbox children are laid out in) — by default this is set to row,
           which causes them to be laid out in a row in the direction your
@@ -262,10 +301,15 @@ export default function Main() {
           English browser).
         </p>
         <p>
-          Try adding the following declaration to your{" "}
-          <a className="section" target="_blank" href="https://mzl.la/2ulMDUf">
+          Try adding the following declaration to your{' '}
+          <a
+            className="section"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2ulMDUf"
+          >
             &lt;section&gt;
-          </a>{" "}
+          </a>{' '}
           rule:
         </p>
         <code className="code_separate">flex-direction: column;</code>
@@ -287,22 +331,24 @@ export default function Main() {
         <p>
           One issue that arises when you have a fixed amount of width or height
           in your layout is that eventually your flexbox children will overflow
-          their container, breaking the layout. Have a look at our{" "}
+          their container, breaking the layout. Have a look at our{' '}
           <a
             className="flexbox-wrap0.html"
             target="_blank"
+            rel="noopener noreferrer"
             href="http://bit.ly/3bx0W9c"
           >
             flexbox-wrap0.html
-          </a>{" "}
-          example, and try{" "}
+          </a>{' '}
+          example, and try{' '}
           <a
             className="viewing_it_live"
             target="_blank"
+            rel="noopener noreferrer"
             href="http://bit.ly/3bn4tqi"
           >
             viewing it live
-          </a>{" "}
+          </a>{' '}
           (take a local copy of this file now if you want to follow along with
           this example):
         </p>
@@ -314,18 +360,28 @@ export default function Main() {
         <p>
           Here we see that the children are indeed breaking out of their
           container. One way in which you can fix this is to add the following
-          declaration to your{" "}
-          <a className="section" target="_blank" href="https://mzl.la/2ulMDUf">
+          declaration to your{' '}
+          <a
+            className="section"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2ulMDUf"
+          >
             &lt;section&gt;
-          </a>{" "}
+          </a>{' '}
           rule:
         </p>
         <code className="code_separate">flex-wrap: wrap;</code>
         <p>
-          Also, add the following declaration to your{" "}
-          <a className="article" target="_blank" href="https://mzl.la/2H6a2LV">
+          Also, add the following declaration to your{' '}
+          <a
+            className="article"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2H6a2LV"
+          >
             &lt;article&gt;
-          </a>{" "}
+          </a>{' '}
           rule:
         </p>
         <code className="code_separate">flex: 200px;</code>
@@ -348,14 +404,15 @@ export default function Main() {
           the entire row is still filled.
         </p>
         <p>
-          But there's more we can do here. First of all, try changing your{" "}
+          But there's more we can do here. First of all, try changing your{' '}
           <a
-            class="flex-direction"
+            className="flex-direction"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/2vUynlw"
           >
             flex-direction
-          </a>{" "}
+          </a>{' '}
           property value to row-reverse — now you'll see that you still have
           your multiple row layout, but it starts from the opposite corner of
           the browser window and flows in reverse.
@@ -366,26 +423,29 @@ export default function Main() {
           <h2>flex-flow shorthand</h2>
         </header>
         <p>
-          At this point it is worth noting that a shorthand exists for{" "}
+          At this point it is worth noting that a shorthand exists for{' '}
           <a
             className="flex-direction"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/2vUynlw"
           >
             flex-direction
-          </a>{" "}
-          and{" "}
+          </a>{' '}
+          and{' '}
           <a
             className="flex-wrap"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/2SAFE1Q"
           >
             flex-wrap
-          </a>{" "}
-          —{" "}
+          </a>{' '}
+          —{' '}
           <a
             className="flex-flow"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/38cRmWK"
           >
             flex-flow
@@ -406,26 +466,29 @@ export default function Main() {
         <p>
           Let's now return to our first example, and look at how we can control
           what proportion of space flex items take up. Fire up your local copy
-          of{" "}
+          of{' '}
           <a
             className="flexbox0.html"
             target="_blank"
+            rel="noopener noreferrer"
             href="http://bit.ly/2OBTKi2"
           >
             flexbox0.html
           </a>
-          , or take a copy of{" "}
+          , or take a copy of{' '}
           <a
             className="flexbox1.html"
             target="_blank"
+            rel="noopener noreferrer"
             href="http://bit.ly/39hbKpS"
           >
             flexbox1.html
-          </a>{" "}
+          </a>{' '}
           as a new starting point (
           <a
             className="see_it_live"
             target="_blank"
+            rel="noopener noreferrer"
             href="http://bit.ly/3bj6wfj"
           >
             see it live
@@ -441,10 +504,15 @@ export default function Main() {
         <p>
           This is a unitless proportion value that dictates how much of the
           available space along the main axis each flex item will take up. In
-          this case, we are giving each{" "}
-          <a className="article" target="_blank" href="https://mzl.la/2H6a2LV">
+          this case, we are giving each{' '}
+          <a
+            className="article"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2H6a2LV"
+          >
             &lt;article&gt;
-          </a>{" "}
+          </a>{' '}
           element a value of 1, which means they will all take up an equal
           amount of the spare space left after things like padding and margin
           have been set. It is a proportion, meaning that giving each flex item
@@ -457,10 +525,15 @@ export default function Main() {
           }`}
         </code>
         <p>
-          Now when you refresh, you'll see that the third{" "}
-          <a className="article" target="_blank" href="https://mzl.la/2H6a2LV">
+          Now when you refresh, you'll see that the third{' '}
+          <a
+            className="article"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2H6a2LV"
+          >
             &lt;article&gt;
-          </a>{" "}
+          </a>{' '}
           takes up twice as much of the available width as the other two — there
           are now four proportion units available in total. The first two flex
           items have one each so they take 1/4 of the available space each. The
@@ -496,10 +569,15 @@ export default function Main() {
         <p>
           The real value of flexbox can be seen in its
           flexibility/responsiveness — if you resize the browser window, or add
-          another{" "}
-          <a className="article" target="_blank" href="https://mzl.la/2H6a2LV">
+          another{' '}
+          <a
+            className="article"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2H6a2LV"
+          >
             &lt;article&gt;
-          </a>{" "}
+          </a>{' '}
           element, the layout continues to work just fine.
         </p>
       </section>
@@ -508,33 +586,40 @@ export default function Main() {
           <h2>flex: shorthand versus longhand</h2>
         </header>
         <p>
-          <a className="flex" target="_blank" href="https://mzl.la/2OCWxYs">
+          <a
+            className="flex"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2OCWxYs"
+          >
             flex
-          </a>{" "}
+          </a>{' '}
           is a shorthand property that can specify up to three different values:
         </p>
         <ul>
           <li>
             The unitless proportion value we discussed above. This can be
-            specified individually using the{" "}
+            specified individually using the{' '}
             <a
               className="flex-flow"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://mzl.la/38cRmWK"
             >
               flex-flow
-            </a>{" "}
+            </a>{' '}
             longhand property.
           </li>
           <li>
-            A second unitless proportion value —{" "}
+            A second unitless proportion value —{' '}
             <a
               className="flex-shrink"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://mzl.la/37csiOu"
             >
               flex-shrink
-            </a>{" "}
+            </a>{' '}
             — that comes into play when the flex items are overflowing their
             container. This specifies how much of the overflowing amount is
             taken away from each flex item's size, to stop them overflowing
@@ -543,14 +628,15 @@ export default function Main() {
           </li>
           <li>
             The minimum size value we discussed above. This can be specified
-            individually using the{" "}
+            individually using the{' '}
             <a
               className="flex-basis"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://mzl.la/37csiOu"
             >
               flex-basis
-            </a>{" "}
+            </a>{' '}
             longhand value.
           </li>
         </ul>
@@ -567,18 +653,20 @@ export default function Main() {
         </header>
         <p>
           You can also use flexbox features to align flex items along the main
-          or cross axis. Let's explore this by looking at a new example —{" "}
+          or cross axis. Let's explore this by looking at a new example —{' '}
           <a
             className="flex-align0.html"
             target="_blank"
+            rel="noopener noreferrer"
             href="http://bit.ly/2tCK8MG"
           >
             flex-align0.html
-          </a>{" "}
+          </a>{' '}
           (
           <a
             className="see_it_live_also"
             target="_blank"
+            rel="noopener noreferrer"
             href="http://bit.ly/2HaXRgM"
           >
             see it live also
@@ -610,10 +698,11 @@ export default function Main() {
           <a
             className="align-items"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/2SckMi4"
           >
             align-items
-          </a>{" "}
+          </a>{' '}
           controls where the flex items sit on the cross axis.
         </p>
         <ul>
@@ -633,34 +722,37 @@ export default function Main() {
           <li>
             You can also have values like <b>flex-start</b> and <b>flex-end</b>,
             which will align all items at the start and end of the cross axis
-            respectively. See{" "}
+            respectively. See{' '}
             <a
               className="align-items"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://mzl.la/2SckMi4"
             >
               align-items
-            </a>{" "}
+            </a>{' '}
             for the full details.
           </li>
         </ul>
         <p>
-          You can override the{" "}
+          You can override the{' '}
           <a
             className="align-items"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/2SckMi4"
           >
             align-items
-          </a>{" "}
-          behavior for individual flex items by applying the{" "}
+          </a>{' '}
+          behavior for individual flex items by applying the{' '}
           <a
             className="align-self"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/2Svh3ez"
           >
             align-self
-          </a>{" "}
+          </a>{' '}
           property to them. For example, try adding the following to your CSS:
         </p>
         <code className="code_separate">
@@ -676,10 +768,11 @@ export default function Main() {
           <a
             className="justify-content"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/2vgLtJL"
           >
             justify-content
-          </a>{" "}
+          </a>{' '}
           controls where the flex items sit on the main axis.
         </p>
         <ul>
@@ -735,10 +828,15 @@ export default function Main() {
         </p>
         <ul>
           <li>
-            By default, all flex items have an{" "}
-            <a className="order" target="_blank" href="https://mzl.la/2vU0Ojx">
+            By default, all flex items have an{' '}
+            <a
+              className="order"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://mzl.la/2vU0Ojx"
+            >
               order
-            </a>{" "}
+            </a>{' '}
             value of 0.
           </li>
           <li>
@@ -775,18 +873,20 @@ export default function Main() {
           It is possible to create some pretty complex layouts with flexbox. It
           is perfectly ok to set a flex item to also be a flex container, so
           that its children are also laid out like flexible boxes. Have a look
-          at{" "}
+          at{' '}
           <a
             className="complex-flexbox.html"
             target="_blank"
+            rel="noopener noreferrer"
             href="http://bit.ly/31EO50c"
           >
             complex-flexbox.html
-          </a>{" "}
+          </a>{' '}
           (
           <a
             className="see_it_live_also"
             target="_blank"
+            rel="noopener noreferrer"
             href="http://bit.ly/39gr3zd"
           >
             see it live also
@@ -799,30 +899,55 @@ export default function Main() {
           alt="Complex flexbox example"
         />
         <p>
-          The HTML for this is fairly simple. We've got a{" "}
-          <a className="section" target="_blank" href="https://mzl.la/2ulMDUf">
+          The HTML for this is fairly simple. We've got a{' '}
+          <a
+            className="section"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2ulMDUf"
+          >
             &lt;section&gt;
-          </a>{" "}
-          element containing three{" "}
-          <a className="article" target="_blank" href="https://mzl.la/2H6a2LV">
+          </a>{' '}
+          element containing three{' '}
+          <a
+            className="article"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2H6a2LV"
+          >
             &lt;article&gt;
           </a>
-          s. The third{" "}
-          <a className="article" target="_blank" href="https://mzl.la/2H6a2LV">
+          s. The third{' '}
+          <a
+            className="article"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2H6a2LV"
+          >
             &lt;article&gt;
-          </a>{" "}
-          contains three{" "}
-          <a className="div" target="_blank" href="https://mzl.la/2UCZY5e">
+          </a>{' '}
+          contains three{' '}
+          <a
+            className="div"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2UCZY5e"
+          >
             &lt;div&gt;
           </a>
           s.
         </p>
         <p>Let's look at the code we've used for the layout.</p>
         <p>
-          First of all, we set the children of the{" "}
-          <a className="section" target="_blank" href="https://mzl.la/2ulMDUf">
+          First of all, we set the children of the{' '}
+          <a
+            className="section"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2ulMDUf"
+          >
             &lt;section&gt;
-          </a>{" "}
+          </a>{' '}
           to be laid out as flexible boxes.
         </p>
         <code className="code_separate">
@@ -831,15 +956,25 @@ export default function Main() {
           }`}
         </code>
         <p>
-          Next, we set some flex values on the{" "}
-          <a className="article" target="_blank" href="https://mzl.la/2H6a2LV">
+          Next, we set some flex values on the{' '}
+          <a
+            className="article"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2H6a2LV"
+          >
             &lt;article&gt;
           </a>
           s themselves. Take special note of the 2nd rule here — we are setting
-          the third{" "}
-          <a className="article" target="_blank" href="https://mzl.la/2H6a2LV">
+          the third{' '}
+          <a
+            className="article"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2H6a2LV"
+          >
             &lt;article&gt;
-          </a>{" "}
+          </a>{' '}
           to have its children laid out like flex items too, but this time we
           are laying them out like a column.
         </p>
@@ -857,15 +992,25 @@ export default function Main() {
           }`}
         </code>
         <p>
-          Next, we select the first{" "}
-          <a className="div" target="_blank" href="https://mzl.la/2UCZY5e">
+          Next, we select the first{' '}
+          <a
+            className="div"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2UCZY5e"
+          >
             &lt;div&gt;
           </a>
           . We first use <code>flex:1 100px;</code> to effectively give it a
-          minimum height of 100px, then we set its children (the{" "}
-          <a className="button" target="_blank" href="https://mzl.la/2UCZY5e">
+          minimum height of 100px, then we set its children (the{' '}
+          <a
+            className="button"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://mzl.la/2UCZY5e"
+          >
             &lt;button&gt;
-          </a>{" "}
+          </a>{' '}
           elements) to also be laid out like flex items. Here we lay them out in
           a wrapping row, and align them in the center of the available space
           like we did in the individual button example we saw earlier.
@@ -921,14 +1066,14 @@ export default function Main() {
         </p>
         <p>
           We discuss strategies for overcoming cross browser support issues in
-          our{" "}
+          our{' '}
           <a
             className="Cross_browser_testing"
             target="_blank"
             href="https://mzl.la/31DzamJ"
           >
             Cross browser testing
-          </a>{" "}
+          </a>{' '}
           module.
         </p>
       </section>
@@ -939,10 +1084,11 @@ export default function Main() {
         <p>
           We have covered a lot in this article, but can you remember the most
           important information? You can find some further tests to verify that
-          you've retained this information before you move on — see{" "}
+          you've retained this information before you move on — see{' '}
           <a
             className="Test_your_skills:_Flexbox"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/39fvQAI"
           >
             Test your skills: Flexbox
@@ -966,10 +1112,11 @@ export default function Main() {
           <h2>Reference</h2>
         </header>
         <p>
-          All the documentation in this page is taken from{" "}
+          All the documentation in this page is taken from{' '}
           <a
-            class="reference-link"
+            className="reference-link"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://mzl.la/31AVkpK"
           >
             MDN
